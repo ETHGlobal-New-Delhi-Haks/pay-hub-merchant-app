@@ -13,11 +13,7 @@ const PinInput: React.FC<PinInputProps> = ({ onSubmit, onBack }) => {
     if (pin.length < 6) {
       const newPin = pin + num;
       setPin(newPin);
-      
-      // Auto submit when 6 digits are entered
-      if (newPin.length === 6) {
-        setTimeout(() => onSubmit(newPin), 300);
-      }
+
     }
   };
 
