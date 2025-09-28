@@ -40,13 +40,13 @@ const AmountInput: React.FC<AmountInputProps> = ({ onNext, onBack, initialAmount
   ];
 
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-white flex flex-col pt-10">
       {/* Header */}
       <div className="flex items-center px-6 py-4 border-b border-gray-200">
         <button onClick={onBack} className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
           <ArrowLeft className="w-5 h-5 text-gray-600" />
         </button>
-        <h1 className="ml-4 text-lg font-semibold text-gray-900">Sell</h1>
+        <h1 className="ml-4 text-lg font-semibold text-gray-900">Sale</h1>
       </div>
 
       {/* Amount display */}

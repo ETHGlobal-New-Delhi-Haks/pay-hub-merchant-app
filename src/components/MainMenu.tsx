@@ -1,5 +1,5 @@
 import React from 'react';
-import { CreditCard, BarChart3, Settings, HelpCircle, LogOut, User } from 'lucide-react';
+import { CreditCard, Settings, HelpCircle, LogOut, User } from 'lucide-react';
 
 interface MainMenuProps {
   onStartSale: () => void;
@@ -7,23 +7,10 @@ interface MainMenuProps {
 
 const MainMenu: React.FC<MainMenuProps> = ({ onStartSale }) => {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Status bar mockup */}
-      <div className="flex justify-between items-center px-6 py-2 bg-gray-100 text-xs font-medium text-gray-800">
-        <div className="flex items-center space-x-1">
-          <div className="w-1 h-1 bg-gray-800 rounded-full"></div>
-          <div className="w-6 h-1 bg-gray-800 rounded-full"></div>
-        </div>
-        <span>13:17</span>
-        <div className="flex items-center space-x-1">
-          <span>📶</span>
-          <span>📶</span>
-          <span>🔋</span>
-        </div>
-      </div>
+    <div className="min-h-screen bg-white pt-10">
 
       {/* Header */}
-      <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
+      <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200 pt-10">
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
             <User className="w-4 h-4 text-green-600" />

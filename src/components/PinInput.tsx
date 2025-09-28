@@ -39,7 +39,7 @@ const PinInput: React.FC<PinInputProps> = ({ onSubmit, onBack }) => {
   ];
 
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-white flex flex-col pt-10">
       {/* Header */}
       <div className="flex items-center px-6 py-4 border-b border-gray-200">
         <button onClick={onBack} className="p-2 hover:bg-gray-100 rounded-lg transition-colors">

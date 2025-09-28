@@ -15,20 +15,7 @@ const PaymentResult: React.FC<PaymentResultProps> = ({
   onBack 
 }) => {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
-      {/* Status bar mockup */}
-      <div className="flex justify-between items-center px-6 py-2 bg-gray-100 text-xs font-medium text-gray-800">
-        <div className="flex items-center space-x-1">
-          <div className="w-1 h-1 bg-gray-800 rounded-full"></div>
-          <div className="w-6 h-1 bg-gray-800 rounded-full"></div>
-        </div>
-        <span>13:17</span>
-        <div className="flex items-center space-x-1">
-          <span>📶</span>
-          <span>📶</span>
-          <span>🔋</span>
-        </div>
-      </div>
+    <div className="min-h-screen bg-white flex flex-col  pt-10">
 
       {/* Result content */}
       <div className="flex-1 flex items-center justify-center px-6">

@@ -26,7 +26,7 @@ const SaleFlow: React.FC<SaleFlowProps> = ({ onBack }) => {
     setCurrentStep('pin');
   };
 
-  const handlePinSubmit = (pin: string) => {
+  const handlePinSubmit = () => {
     // Simulate payment processing
     const success = Math.random() > 0.3; // 70% success rate for demo
     setIsSuccess(success);
@@ -43,7 +43,7 @@ const SaleFlow: React.FC<SaleFlowProps> = ({ onBack }) => {
     switch (currentStep) {
       case 'amount':
         return (
-          <AmountInput 
+          <AmountInput
             onNext={handleAmountNext}
             onBack={onBack}
             initialAmount={amount}
@@ -51,7 +51,7 @@ const SaleFlow: React.FC<SaleFlowProps> = ({ onBack }) => {
         );
       case 'payment':
         return (
-          <PaymentMethod 
+          <PaymentMethod
             onNext={handlePaymentNext}
             onBack={() => setCurrentStep('amount')}
             amount={amount}
@@ -59,14 +59,14 @@ const SaleFlow: React.FC<SaleFlowProps> = ({ onBack }) => {
         );
       case 'pin':
         return (
-          <PinInput 
+          <PinInput
             onSubmit={handlePinSubmit}
             onBack={() => setCurrentStep('payment')}
           />
         );
       case 'result':
         return (
-          <PaymentResult 
+          <PaymentResult
             isSuccess={isSuccess}
             amount={amount}
             paymentMethod={paymentMethod}
